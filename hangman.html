@@ -7,9 +7,18 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    <div id="startingElements">
     <input type="text" id="hangmanWord" placeholder="Enter the word">
     <button id="sendWordButton" onclick="saveTheWord()">StartGame</button>
-    <div id="textZone"> </div>
+    </div>
+    <div id="textZone" class="big"> </div>
+    <br>
+    <div id="letterElements">
+    <input type="text" id="writeLetter" placeholder="type a letter!">
+    <button id="submitLetter" onclick="checkLetter()">Check</button>
+    </div>
+    <p id="livesLeft" class="big"></p>
+    <p id="textResult">Welcome to my Hangman game, please type the word to start the game!</p>
     <script src = "script.js"></script>
 </body>
 </html>
